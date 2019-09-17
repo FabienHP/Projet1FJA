@@ -1,12 +1,3 @@
-*{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
 @font-face {
     font-family: "Gotham Rounded A";
     src: url("font/gothamrounded-medium.otf");
@@ -25,23 +16,54 @@
     url("font/gothamrounded-book.otf") format("svg");
 }
 
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
-.col-0{display: none;}
-.col-1{width: 8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 25%;}
-.col-4{width: 33.33%;}
-.col-5{width: 41.66%;}
-.col-6{width: 50%;}
-.col-7{width: 58.33%;}
-.col-8{width: 66.66%;}
-.col-9{width: 75%;}
-.col-10{width: 83.33%;}
-.col-11{width: 91.66%;}
-.col-12{width: 100%;}
+/*AFFICHAGE BUREAU*/
 
+@media screen and (min-width: 992px) {
+    .col-lg-0{display: none;}
+    .col-lg-1{width: 8.33%;}
+    .col-lg-2{width: 16.66%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-4{width: 33.33%;}
+    .col-lg-5{width: 41.66%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-7{width: 58.33%;}
+    .col-lg-8{width: 66.66%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-10{width: 83.33%;}
+    .col-lg-11{width: 91.66%;}
+    .col-lg-12{width: 100%;}
+}
 
-@media screen and (max-width: 500px) {
+/*AFFICHAGE TABLETTE*/
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+    .col-md-0{display: none;}
+    .col-md-1{width: 8.33%;}
+    .col-md-2{width: 16.66%;}
+    .col-md-3{width: 25%;}
+    .col-md-4{width: 33.33%;}
+    .col-md-5{width: 41.66%;}
+    .col-md-6{width: 50%;}
+    .col-md-7{width: 58.33%;}
+    .col-md-8{width: 66.66%;}
+    .col-md-9{width: 75%;}
+    .col-md-10{width: 83.33%;}
+    .col-md-11{width: 91.66%;}
+    .col-md-12{width: 100%;}
+}
+
+/*AFFICHAGE MOBILE*/
+
+@media screen and (max-width: 575.98px) {
     .col-sm-0{display: none;}
     .col-sm-1{width: 8.33%;}
     .col-sm-2{width: 16.66%;}
@@ -55,125 +77,251 @@
     .col-sm-10{width: 83.33%;}
     .col-sm-11{width: 91.66%;}
     .col-sm-12{width: 100%;}
-}
 
-@media screen and (min-width: 501px) and (max-width: 800px) {
-    .col-sm-0{display: none;}
-    .col-sm-1{width: 8.33%;}
-    .col-sm-2{width: 16.66%;}
-    .col-sm-3{width: 25%;}
-    .col-sm-4{width: 33.33%;}
-    .col-sm-5{width: 41.66%;}
-    .col-sm-6{width: 50%;}
-    .col-sm-7{width: 58.33%;}
-    .col-sm-8{width: 66.66%;}
-    .col-sm-9{width: 75%;}
-    .col-sm-10{width: 83.33%;}
-    .col-sm-11{width: 91.66%;}
-    .col-sm-12{width: 100%;}
-}
-
-@media screen and (min-width: 801px) {
-    .col-sm-0{display: none;}
-    .col-sm-1{width: 8.33%;}
-    .col-sm-2{width: 16.66%;}
-    .col-sm-3{width: 25%;}
-    .col-sm-4{width: 33.33%;}
-    .col-sm-5{width: 41.66%;}
-    .col-sm-6{width: 50%;}
-    .col-sm-7{width: 58.33%;}
-    .col-sm-8{width: 66.66%;}
-    .col-sm-9{width: 75%;}
-    .col-sm-10{width: 83.33%;}
-    .col-sm-11{width: 91.66%;}
-    .col-sm-12{width: 100%;}
-}
+    .marginsite {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 80px;
+        background-color: #F9FAFA;
+    }
 
 /* Navbar Fabien */
 
-.row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+    nav {
+        position: fixe;
+        background-color: white;
+        height: 70px;
+    }
 
-.logo {
-    max-width: 139px;
-    max-height: 32px;
-}
+    .logo {
+        max-width: 139px;
+        max-height: 32px;
+    }
 
-nav {
-    padding: 15px;
-    text-align: center;
-}
+    nav>ul {
+        font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
 
-nav>div>a {
-    padding: 20px;
-    font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
-}
+    .green {
+        color: #51AD58;
+    }
 
-.green {
-    color: #51AD58;
-}
+/* Header/Form Fabien*/
+    
+    .head {
+        background-image: linear-gradient(to bottom, rgba(48,56,83,0) 40%, #303853 60%, #303853 100%),url(img/backgroundform.jpg);
+        background-color: #303853;
+        background-attachment: scroll, scroll;
+        background-position-x: 100%, 100%;
+        background-position-y: 100%, -10px;
+        padding: 48px 32px 24px;
+    }
 
-/* Form/header Jonathan*/
+/* Header Fabien*/
 
-.formulaire { 
-    background-color: white;
-    margin:0 px auto;
-    background-image: url(img/backgroundform.jpg);
-}
-h2{
-    font-size: 25px;
-    font-weight:bold;
+    .texthead {
+        color: #fff;
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        text-align: left;
+    }
 
-}
-h3 {
-    background-color: gray;
-    margin: 0 px auto;
-    height: ; 
-}
+    .texthead h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .texthead h2 {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    
+/* Form Jonathan */
+
+    .formulaire { 
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 24px ;
+        border: 1px solid white;
+    }
+
+    h3 {
+        background-color: gray;
+        border: 2px solid white;
+        text-align: center;
+        margin: 0px auto;
+    }
+    
+    input{  
+    display:inline-block;
+    
+    height: 80px;
+    margin: 0px auto;
+    
+    border-color: gray;
+    border: 2px solid gray;
+    }
+    
+    .button {
+        display:inline;
+        font-size:20px; 
+        margin: 0px auto;
+        padding: 50px;
+        
+    }
+
+    button {
+        background-color: blue;
+        color: white;
+        text-align: center;
+    }
+
+    label{
+        display:flex;
+        flex-direction: column;
+    }
+   
+/* Footer of Header Fabien */
+
+    .footer-header {
+        margin-top: 64px;
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .div-footer-header {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .text-1 {
+        font-size: 36px;
+    }
+
+    .text-2 {
+        font-size: 18px;
+    }
 
 /* section Get a career Amaury*/
 
-.getacareer h4 {
-    text-align: center;
-    font-family: "Gotham Rounded B", Arial, Helvetica, sans-serif;
-    font-size: 28px;
-}
+    .secjobs {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .secjobs h4 {
+        text-align: center;
+        font-family: "Gotham Rounded B", Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        padding: 10px;
+    }
 
-.getacareer div p {
-    color:  #7b8b8e;
-    font-family: "Gotham Rounded B", sans-serif;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-}
+    .secjobs>p {
+        color:  #7b8b8e;
+        font-family: "Gotham Rounded B", sans-serif;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 10px;
+    }
 
-.getstarded{
-    background-color: #F4F4F4;
-    max-width: 318px;
-    font-size: 1.125rem;
-    padding: 8px 20px;
-    border-radius: 5px;
-}
+    .secjobs p span {
+        color: black;
+        font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
+        font-weight: strong;
+    }
 
-.getacareer p span {
-    color: black;
-    font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
-    font-weight: strong;
-}
+    .getstarded {
+        background-color: #F4F4F4;
+        padding: 8px 20px;
+        font-size: 1.125rem;
+    }
 
-.mo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    .mo {
+        display: flex;
+        justify-content: center;
+    }
 
-.gacimages{
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 100px;
+    .gacimages {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 150px;              
+    }
+    
+/* Themes Formation*/
+
+    .abox {
+        text-decoration:none;
+    }
+
+    .themes {
+        border-left: solid 8px #3659a2;
+        box-shadow: 0 2px #dfe0e0;
+        border-radius: 4px;
+        background-color: white;
+        padding: 20px 20px 15px 25px;
+        margin: 44px 24px 24px 24px;
+    }
+    
+    .themes h6{
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #3659a2;
+        font-weight: 800;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .themes p{
+        font-family:"Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #7b8b8e;
+        text-align:left;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    
+    .themes span{
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #7b8b8e;
+        font-size: 13px;
+    }
+    
+    .themes strong {
+        font-weight: bold;
+    }
+
+    .UX {
+        border-left: solid 8px #4a4290;
+    }
+
+    .UX h6 {
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #4a4290;
+        font-weight: 800;
+        font-size: 18px;
+    }
+
+    .php{
+        border-left: solid 8px #008297;
+    }
+    
+    .php h6{
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #008297;
+        font-weight: 800;
+        font-size: 18px;
+    }
+    
+/*Fin Get a Career*/
+
 }
-/*fin Get a Career*/

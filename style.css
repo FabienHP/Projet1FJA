@@ -1,3 +1,93 @@
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Navbar Fabien */
+
+.logo {
+    max-width: 139px;
+    max-height: 32px;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    height: 70px;
+}
+
+nav>ul {
+    font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+.green {
+    color: #51AD58;
+}
+
+/* Form/header Jonathan*/
+
+.formulaire { 
+    
+    background-color: white;
+    margin:0 px auto;
+    background-image: url(img/backgroundform.jpg);
+}
+h2{
+font-size: 25px;
+font-weight:bold;
+
+}
+h3 {
+    background-color: gray;
+    margin: 0 px auto;
+}
+
+/* section Get a career Amaury*/
+
+.getacareer h4 {
+    text-align: center;
+    font-family: "Gotham Rounded B", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+.getacareer div p {
+    color:  #7b8b8e;
+    font-family: "Gotham Rounded B", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.getstarded{
+    background-color: #F4F4F4;
+    max-width: 318px;
+    font-size: 1.125rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.getacareer p span {
+    color: black;
+    font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
+    font-weight: strong;
+}
+
+.mo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gacimages{
+    justify-content: space-around;
+    margin-top: 100px;
+}
+/*fin Get a Career*/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -55,6 +145,91 @@
     .col-sm-10{width: 83.33%;}
     .col-sm-11{width: 91.66%;}
     .col-sm-12{width: 100%;}
+
+
+        /* Navbar Fabien */
+
+    .logo {
+        max-width: 139px;
+        max-height: 32px;
+    }
+
+    nav {
+        position: fixed;
+        background-color: white;
+        height: 70px;
+    }
+
+    nav>ul {
+        font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        list-style-type: none;
+    }
+
+    .green {
+        color: #51AD58;
+    }
+
+    /* Form/header Jonathan*/
+
+    .formulaire { 
+        background-color: white;
+        margin:0 px auto;
+        background-image: url(img/backgroundform.jpg);
+    }
+    h2{
+    font-size: 25px;
+    font-weight:bold;
+
+    }
+    h3 {
+        background-color: gray;
+        margin: 0 px auto;
+    }
+
+    /* section Get a career Amaury*/
+
+    .getacareer h4 {
+        text-align: center;
+        font-family: "Gotham Rounded B", Arial, Helvetica, sans-serif;
+        font-size: 28px;
+    }
+
+    .getacareer div p {
+        color:  #7b8b8e;
+        font-family: "Gotham Rounded B", sans-serif;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .getstarded{
+        background-color: #F4F4F4;
+        max-width: 318px;
+        font-size: 1.125rem;
+        padding: 8px 20px;
+        border-radius: 5px;
+    }
+
+    .getacareer p span {
+        color: black;
+        font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
+        font-weight: strong;
+    }
+
+    .mo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gacimages{
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    
+    /*fin Get a Career*/
+
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
@@ -88,92 +263,3 @@
     .col-sm-11{width: 91.66%;}
     .col-sm-12{width: 100%;}
 }
-
-/* Navbar Fabien */
-
-.row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.logo {
-    max-width: 139px;
-    max-height: 32px;
-}
-
-nav {
-    padding: 15px;
-    text-align: center;
-}
-
-nav>div>a {
-    padding: 20px;
-    font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
-}
-
-.green {
-    color: #51AD58;
-}
-
-/* Form/header Jonathan*/
-
-.formulaire { 
-    background-color: white;
-    margin:0 px auto;
-    background-image: url(img/backgroundform.jpg);
-}
-h2{
-    font-size: 25px;
-    font-weight:bold;
-
-}
-h3 {
-    background-color: gray;
-    margin: 0 px auto;
-    height: ; 
-}
-
-/* section Get a career Amaury*/
-
-.getacareer h4 {
-    text-align: center;
-    font-family: "Gotham Rounded B", Arial, Helvetica, sans-serif;
-    font-size: 28px;
-}
-
-.getacareer div p {
-    color:  #7b8b8e;
-    font-family: "Gotham Rounded B", sans-serif;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.getstarded{
-    background-color: #F4F4F4;
-    max-width: 318px;
-    font-size: 1.125rem;
-    padding: 8px 20px;
-    border-radius: 5px;
-}
-
-.getacareer p span {
-    color: black;
-    font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
-    font-weight: strong;
-}
-
-.mo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.gacimages{
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 100px;
-}
-/*fin Get a Career*/

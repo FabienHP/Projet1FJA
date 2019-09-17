@@ -108,5 +108,24 @@ nav>div>a {
     font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
 }
 
+/* section Get a career*/
+
+
+.getacareer h4{
+    text-align: center;
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Arial, Helvetica, sans-serif;
+
+}
+.getacareer p{
+    color: #7b8b8e;
+    font-family: "Gotham Rounded A", sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.getacareer p span{
+    color: black;
+}
 /* ----------------------------------*/
+
 

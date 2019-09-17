@@ -85,7 +85,7 @@
         background-color: #F9FAFA;
     }
 
-    /* Navbar Fabien */
+/* Navbar Fabien */
 
     nav {
         position: fixe;
@@ -109,7 +109,8 @@
     .green {
         color: #51AD58;
     }
-    /* Header/Form Fabien*/
+
+/* Header/Form Fabien*/
     
     .head {
         background-image: linear-gradient(to bottom, rgba(48,56,83,0) 40%, #303853 60%, #303853 100%),url(img/backgroundform.jpg);
@@ -120,7 +121,7 @@
         padding: 48px 32px 24px;
     }
 
-    /* Header Fabien*/
+/* Header Fabien*/
 
     .texthead {
         color: #fff;
@@ -139,21 +140,21 @@
         margin-top: 15px;
     }
     
-    /* Form Jonathan */
+/* Form Jonathan */
 
     .formulaire { 
         background-color: white;
-        display:block;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
         margin: 24px ;
         border: 1px solid white;
     }
 
     h3 {
         background-color: gray;
-        height: ;
         border: 2px solid white;
         text-align: center;
-        font-size: ;
         margin: 0px auto;
     }
     
@@ -165,14 +166,11 @@
     
     border-color: gray;
     border: 2px solid gray;
-
-}
-    
     }
+    
     .button {
         display:inline;
         font-size:20px; 
-        position: ;
         margin: 0px auto;
         padding: 50px;
         
@@ -182,6 +180,11 @@
         background-color: blue;
         color: white;
         text-align: center;
+    }
+
+    label{
+        display:flex;
+        flex-direction: column;
     }
    
 /* Footer of Header Fabien */
@@ -223,7 +226,7 @@
         padding: 10px;
     }
 
-    .secjobs p {
+    .secjobs>p {
         color:  #7b8b8e;
         font-family: "Gotham Rounded B", sans-serif;
         text-align: center;
@@ -256,48 +259,69 @@
         width: 150px;              
     }
     
-    /* Themes Formation*/
+/* Themes Formation*/
+
+    .abox {
+        text-decoration:none;
+    }
 
     .themes {
-        height: 177 px;
-        width:  305px;
-        border-left: solid 5px #4a4290;
-        border-radius: 7px;
+        border-left: solid 8px #3659a2;
+        box-shadow: 0 2px #dfe0e0;
+        border-radius: 4px;
         background-color: white;
-        padding: 10px;
-        margin: 5px 0;
+        padding: 20px 20px 15px 25px;
+        margin: 44px 24px 24px 24px;
     }
+    
     .themes h6{
         font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
-        color: #4a4290;
+        color: #3659a2;
         font-weight: 800;
-        line-height: 1.3;
+        font-size: 18px;
+        margin-bottom: 5px;
     }
 
     .themes p{
-        text-decoration:none;
         font-family:"Gotham Rounded B", Helvetica, Arial, sans-serif;
-        font-size: 0.8em;
-        font-weight: normal;
-        text-align:left;
         color: #7b8b8e;
+        text-align:left;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    
+    .themes span{
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #7b8b8e;
+        font-size: 13px;
+    }
+    
+    .themes strong {
+        font-weight: bold;
     }
 
+    .UX {
+        border-left: solid 8px #4a4290;
+    }
 
+    .UX h6 {
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #4a4290;
+        font-weight: 800;
+        font-size: 18px;
+    }
 
-    
     .php{
-        border-left: solid 7px #008297;
+        border-left: solid 8px #008297;
     }
     
     .php h6{
         font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: #008297;
         font-weight: 800;
-        line-height: 1.3;
+        font-size: 18px;
     }
     
-    
-    /*fin Get a Career*/
+/*Fin Get a Career*/
 
 }

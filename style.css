@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "Gotham Rounded A";
+    src: url("font/gothamrounded-medium.otf");
+    src:
+    url("font/gothamrounded-medium.otf") format("woff"),
+    url("font/gothamrounded-medium.otf") format("opentype"),
+    url("font/gothamrounded-medium.otf") format("svg");
+}
+
+@font-face {
+    font-family: "Gotham Rounded B";
+    src: url("font/gothamrounded-book.otf");
+    src:
+    url("font/gothamrounded-book.otf") format("woff"),
+    url("font/gothamrounded-book.otf") format("opentype"),
+    url("font/gothamrounded-book.otf") format("svg");
+}
+
+
 .col-0{display: none;}
 .col-1{width: 8.33%;}
 .col-2{width: 16.66%;}
@@ -61,6 +80,8 @@
     .col-sm-12{width: 100%;}
 }
 
+/* Navbar */
+
 .row {
     width: 100%;
     display: flex;
@@ -81,3 +102,11 @@ nav {
 nav>div>a {
     padding: 20px;
 }
+
+.green {
+    color: #4B5658;
+    font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
+}
+
+/* ----------------------------------*/
+

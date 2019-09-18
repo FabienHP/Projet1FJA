@@ -90,7 +90,8 @@
     nav {
         position: fixe;
         background-color: white;
-        height: 70px;
+        height: 50px;
+        text-decoration: none;
     }
 
     .logo {
@@ -100,7 +101,6 @@
 
     nav>ul {
         font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
-        font-weight: 500;
         list-style-type: none;
         display: flex;
         flex-direction: row;
@@ -140,53 +140,88 @@
         margin-top: 15px;
     }
     
-/* Form Jonathan */
+/* Top Form Fabien/Jonathan */
+
+    .extform {
+        padding: 0 9px;
+        margin-top: 24px;
+    }
 
     .formulaire { 
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         background-color: white;
         display:flex;
         flex-direction: column;
         align-items: center;
-        margin: 24px ;
-        border: 1px solid white;
+        padding: 30px;
+        border-radius: 5px;
+        color: #40484a;
     }
 
-    h3 {
-        background-color: gray;
-        border: 2px solid white;
+    .formtitle {
+        background-color: #edeff0;
         text-align: center;
-        margin: 0px auto;
-    }
-    
-    input{  
-    display:inline-block;
-    
-    height: 80px;
-    margin: 0px auto;
-    
-    border-color: gray;
-    border: 2px solid gray;
-    }
-    
-    .button {
-        display:inline;
-        font-size:20px; 
-        margin: 0px auto;
-        padding: 50px;
-        
+        padding: 20px;
+        margin: -30px -30px 30px;
+        border-radius: 5px 5px 0 0;
     }
 
-    button {
-        background-color: blue;
-        color: white;
-        text-align: center;
+    form>p>span {
+        font-weight: bold;
+    }
+    
+/* Input Form Jonathan/Fabien */
+
+    form label span {
+        font-weight: bold;
+        margin-bottom: 8px;
     }
 
     label{
         display:flex;
         flex-direction: column;
     }
-   
+
+    input{  
+        background-color: #f9fafa;
+        border: 2px solid #d4d9dd;
+        border-radius: 4px;
+        padding: .75rem 1rem;
+        margin-bottom: 24px;
+    }
+
+/* Footer of Form Fabien/Jonathan */
+
+    .labcheck {
+        flex-direction: row-reverse;
+        border-bottom: 1px solid #dfe0e0;
+        padding-bottom: 16px;
+    }
+
+    .inpcheck {
+        background-color: #f9fafa;
+        border: 2px solid #d4d9dd;
+        margin: 0;
+    }
+
+    .textcheck {
+        font-weight: normal;
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    button {
+        background-color: #387bab;
+        color: white;
+        text-align: center;
+        border-radius: 4px;
+        margin-top: 24px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 40px;
+        height: 52px;;
+    }
+
 /* Footer of Header Fabien */
 
     .footer-header {
@@ -194,14 +229,13 @@
         font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: white;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
+        justify-content: center;
     }
-    
+
     .div-footer-header {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        margin-bottom: 1rem;
+        margin: 0 1.5rem 1rem 1.5rem;
     }
 
     .text-1 {
@@ -259,8 +293,8 @@
         justify-content:center;
         width: 150px;           
     }
-    
-/* Themes Formation*/
+
+/* Themes Formation Amauy*/
 
     .abox {
         text-decoration:none;
@@ -337,7 +371,7 @@
         border-left: solid 8px #008297;
     }
     
-    .php h6{
+    .php h6 {
         font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: #008297;
         font-weight: 800;

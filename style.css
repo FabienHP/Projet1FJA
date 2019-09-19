@@ -301,6 +301,12 @@
     .secjobs {
         display: flex;
         flex-direction:column;
+<<<<<<< HEAD
+        justify-content:center;
+    }
+
+    .secjobs h4 {
+=======
         padding: 3rem 0 5rem 0;
         
     }
@@ -314,6 +320,7 @@
         font-weight: bold;
         color: #384047;
         margin: 2rem 0 15px 0;
+>>>>>>> de17f27e9ae5f4420187c4b75749ea6606142c9b
         text-align: center;
     }
 
@@ -351,12 +358,18 @@
 
     .gacimages>h5 {
         display: flex;
+<<<<<<< HEAD
+        flex-direction: column;
+        justify-content:center;
+        width: 150px;           
+=======
         align-items: center;
         margin: 15px 24px;
         font-size: 1rem;
         font-weight: bold;
         color: #384047;
         padding: 0 4rem;
+>>>>>>> de17f27e9ae5f4420187c4b75749ea6606142c9b
     }
 
 /* Themes Formation Amauy*/
@@ -406,6 +419,27 @@
         font-size: 18px;
     }
 
+/* section Get a career*/
+
+
+.getacareer h4{
+    text-align: center;
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Arial, Helvetica, sans-serif;
+
+}
+.getacareer p{
+    color: #7b8b8e;
+    font-family: "Gotham Rounded A", sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.getacareer p span{
+    color: black;
+}
+/* ----------------------------------*/
+
+
     .php{
         border-left: solid 8px #008297;
     }
@@ -432,6 +466,9 @@
 
 /*Fin Get a Career*/
 
+<<<<<<< HEAD
+}
+=======
 
 /*Section Launch your career*/
 
@@ -612,3 +649,4 @@
         padding: 1.5rem 0 0 15px;
     }
 }
+>>>>>>> de17f27e9ae5f4420187c4b75749ea6606142c9b

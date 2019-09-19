@@ -25,6 +25,12 @@
 	vertical-align: baseline;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /*AFFICHAGE BUREAU*/
 
 @media screen and (min-width: 992px) {
@@ -78,6 +84,11 @@
     .col-sm-11{width: 91.66%;}
     .col-sm-12{width: 100%;}
 
+    html {
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #7b8b8e;
+    }
+
     .marginsite {
         padding-left: 32px;
         padding-right: 32px;
@@ -85,32 +96,37 @@
         background-color: #F9FAFA;
     }
 
-/* Navbar Fabien */
+/* Navbar */
 
     nav {
-        position: fixe;
+        position: fixed;
         background-color: white;
         height: 50px;
+        width: 100%;
+    }
+
+    nav div {
+        height: 100%;
+    }
+
+    .align {
+        display: block; 
+        margin: auto;
+    }
+
+    .navlogo {
+        width: 30px;
+        height: 32px;
+    }
+
+    nav a {
         text-decoration: none;
+        color: #5fcf80;
+        font-weight: bold;
+        font-size: 14px;
     }
 
-    .logo {
-        max-width: 139px;
-        max-height: 32px;
-    }
-
-    nav>ul {
-        font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .green {
-        color: #51AD58;
-    }
-
-/* Header/Form Fabien*/
+/* Header/Form*/
     
     .head {
         background-image: linear-gradient(to bottom, rgba(48,56,83,0) 40%, #303853 60%, #303853 100%),url(img/backgroundform.jpg);
@@ -121,11 +137,10 @@
         padding: 48px 32px 24px;
     }
 
-/* Header Fabien*/
+/* Header*/
 
     .texthead {
         color: #fff;
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         text-align: left;
     }
 
@@ -140,7 +155,7 @@
         margin-top: 15px;
     }
     
-/* Top Form Fabien/Jonathan */
+/* Top Form */
 
     .extform {
         padding: 0 9px;
@@ -148,7 +163,6 @@
     }
 
     .formulaire { 
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         background-color: white;
         display:flex;
         flex-direction: column;
@@ -164,13 +178,14 @@
         padding: 20px;
         margin: -30px -30px 30px;
         border-radius: 5px 5px 0 0;
+        line-height: 1.6;
     }
 
     form>p>span {
         font-weight: bold;
     }
     
-/* Input Form Jonathan/Fabien */
+/* Input Form  */
 
     form label span {
         font-weight: bold;
@@ -190,7 +205,7 @@
         margin-bottom: 24px;
     }
 
-/* Footer of Form Fabien/Jonathan */
+/* Footer of Form */
 
     .labcheck {
         flex-direction: row-reverse;
@@ -208,6 +223,8 @@
         font-weight: normal;
         font-size: 14px;
         margin-left: 12px;
+        line-height: 1.3;
+        color: #4b5658;
     }
 
     button {
@@ -222,11 +239,10 @@
         height: 52px;;
     }
 
-/* Footer of Header Fabien */
+/* Footer of Header */
 
     .footer-header {
         margin-top: 64px;
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: white;
         display: flex;
         flex-wrap: wrap;
@@ -246,40 +262,87 @@
         font-size: 18px;
     }
 
+/* Flexible */
+
+    .flexible {
+        background-image: url(img/background.png);
+        padding-bottom: 80px;
+        border-bottom: 1px solid #dfe0e0;
+    }
+
+    .girl {
+        display: none;
+    }
+
+    .player {
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flexible>div {
+        margin-top: 1.5rem;
+    }
+
+    .flexible>div>p {
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    .flexible>div>h4 {
+        font-weight: bold;
+        font-size: 28px;
+        color: #384047
+    }
+
 /* section Get a career Amaury*/
 
     .secjobs {
         display: flex;
         flex-direction:column;
+<<<<<<< HEAD
         justify-content:center;
     }
 
     .secjobs h4 {
-        text-align: center;
-        font-family: "Gotham Rounded B", Arial, Helvetica, sans-serif;
-        font-size: 28px;
-        padding: 10px;
+=======
+        padding: 3rem 0 5rem 0;
+        
     }
 
-    .secjobs>p {
+    .jobspadding {
+        padding: 3rem 0 1rem 0;
+    }
+
+    .secjobs>div h4 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #384047;
+        margin: 2rem 0 15px 0;
+>>>>>>> de17f27e9ae5f4420187c4b75749ea6606142c9b
+        text-align: center;
+    }
+
+    .secjobs>div>p {
         color:  #7b8b8e;
-        font-family: "Gotham Rounded B", sans-serif;
-        text-align: center;
         font-weight: 500;
-        font-size: 16px;
-        padding: 10px;
+        font-size: 1rem;
+        margin: 10px 0 3rem 0;
+        line-height: 1.6;
+        text-align: center;
     }
 
-    .secjobs p span {
-        color: black;
-        font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
-        font-weight: strong;
+    .secjobs>div>div>p>span {
+        color: #40484A;
+        font-weight: bold;
     }
 
     .getstarded {
         background-color: #F4F4F4;
         padding: 8px 20px;
         font-size: 1.125rem;
+        padding: 8px 20px;
     }
 
     .mo {
@@ -288,10 +351,25 @@
     }
 
     .gacimages {
+        margin: 0 auto;  
+        padding: 3rem 0;   
+        text-align: center;    
+    }
+
+    .gacimages>h5 {
         display: flex;
+<<<<<<< HEAD
         flex-direction: column;
         justify-content:center;
         width: 150px;           
+=======
+        align-items: center;
+        margin: 15px 24px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #384047;
+        padding: 0 4rem;
+>>>>>>> de17f27e9ae5f4420187c4b75749ea6606142c9b
     }
 
 /* Themes Formation Amauy*/
@@ -310,7 +388,6 @@
     }
     
     .themes h6{
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: #3659a2;
         font-weight: 800;
         font-size: 18px;
@@ -318,17 +395,14 @@
     }
 
     .themes p{
-        font-family:"Gotham Rounded B", Helvetica, Arial, sans-serif;
-        color: #7b8b8e;
-        text-align:left;
         margin-top: 5px;
         font-size: 13px;
+        color: #7b8b8e;
     }
     
     .themes span{
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
-        color: #7b8b8e;
         font-size: 13px;
+        color: #7b8b8e;
     }
     
     .themes strong {
@@ -340,7 +414,6 @@
     }
 
     .UX h6 {
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: #4a4290;
         font-weight: 800;
         font-size: 18px;
@@ -372,12 +445,208 @@
     }
     
     .php h6 {
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: #008297;
         font-weight: 800;
         font-size: 18px;
     }
-    
+    .gaclearnmore{
+        background-color: #4a4290;
+        color: white;
+        border-radius: 4px;
+        padding: 15px 80px;
+        text-decoration: none;
+        margin: 60px 0;
+        font-weight:600;
+        text-align:center;
+    }
+
+    .gaclearnmore:hover{
+        background-color: #38326d;
+    }
+
 /*Fin Get a Career*/
 
+<<<<<<< HEAD
 }
+=======
+
+/*Section Launch your career*/
+
+
+
+    .launchcareer{        
+        border: solid 1px #d4d9dd;
+        border-radius: 4px;
+        padding: 32px;
+    }
+
+    .launchcareerh5{
+        display: flex;
+        flex-direction:column;
+        justify-items: center;
+        line-height:1.8em;
+    }
+    .launchcareer h5{
+        font-weight: 600;
+        font-size:1.2em;
+        color: #384047;
+    }
+
+    .launchcareer p{
+        margin: 10px 0 20px 0;
+    }  
+
+    .launchlearnmore{
+        background-color: #5fcf80;
+        text-align:center;
+        color: white;
+        border-radius: 4px;
+        padding: 12px 32px;
+        text-decoration: none;
+        margin: 0;
+        font-weight:600;        
+        
+    }
+
+    .launchlearnmor:hover{
+        background-color: #34ad58;
+    }
+
+    .techdegree{       
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .techdegree h5{
+         font-size:16px;
+         color: #384047;                     
+     }
+     
+    .techdegree span{
+        color: #384047;
+        font-weight: 600;      
+         
+     }
+
+     .checkitems{
+         display:flex;
+         flex-direction: column;
+         list-style: none;
+     }
+     
+/*Fin section Launch your career*/
+
+
+/* Supportive */
+    
+    .comunity {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        padding: 5rem 0 3rem 0;
+        line-height: 1.6;
+        
+    }
+
+     .comunity h4 {
+        font-weight: bold;
+        font-size: 28px;
+        color:#384047;
+    }
+
+    .comunity p {
+        margin: 10px 0 20px 0;   
+    }
+
+    .comunity img {
+        max-width: 100%;
+    }
+    
+
+/* Partner */
+
+    .partner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partner h3 {
+        font-size: 36px;
+        text-align: center;
+        color: #384047;
+        padding: 5rem 0 0;
+        margin: 15px 0 4rem;
+    }
+
+    .partner img {
+        padding: 0 1.5rem 5rem;
+        margin: 0auto;
+    }
+
+/* SECTION  Chris-Stone */
+
+    .chris-stone{
+        
+        color: red;
+        font-size: 16px;
+        background-image: url(/img/chris-stone.jpg);
+        background-size:100%;
+        background-repeat:no-repeat;
+        
+    }
+
+   .titre3{
+        color:#384047;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 15px 0px 32px;
+    }
+        
+    .list4{
+        text-align: center;
+        color:green;
+        display: flex;
+        flex-direction:column;
+    }
+      
+/* fin  */
+    
+/* Footer */
+
+    footer {
+        background-color: #F9FAFA;
+        padding: 3rem 0;
+    }
+
+    footer div {
+        padding: 0 15px;
+    }
+
+    .logo-copyright>p {
+        margin: 10px 0 1.5rem 0;
+        font-size: 14px;
+        color: #576366;
+    }
+
+    .footerlogo {
+        width: 139px;
+        height: 32px;
+    }
+
+    footer ul {
+        list-style-type: none;
+        line-height: 1.6;
+    }
+
+    footer a {
+        color: #7b8b8e;
+        text-decoration: none;
+    }
+
+    footer>img {
+        padding: 1.5rem 0 0 15px;
+    }
+}
+>>>>>>> de17f27e9ae5f4420187c4b75749ea6606142c9b

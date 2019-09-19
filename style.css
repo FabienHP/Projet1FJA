@@ -25,6 +25,12 @@
 	vertical-align: baseline;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /*AFFICHAGE BUREAU*/
 
 @media screen and (min-width: 992px) {
@@ -59,6 +65,511 @@
     .col-md-10{width: 83.33%;}
     .col-md-11{width: 91.66%;}
     .col-md-12{width: 100%;}
+
+    html {
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #7b8b8e;
+    }
+
+    .marginsite {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 80px;
+        background-color: #F9FAFA;
+    }
+
+    /* Navbar Fabien */
+    
+        nav {
+            position: fixe;
+            background-color: white;
+            height: 50px;
+            text-decoration: none;
+        }
+    
+        .navlogo {
+            max-width: 139px;
+            max-height: 32px;
+        }
+    
+        nav>ul {
+            font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .green {
+            color: #51AD58;
+        }
+    
+    /* Header/Form Fabien*/
+        
+        .head {
+            background-image: linear-gradient(to bottom, rgba(48,56,83,0) 40%, #303853 60%, #303853 100%),url(img/backgroundform.jpg);
+            background-color: #303853;
+            background-attachment: scroll, scroll;
+            background-position-x: 100%, 100%;
+            background-position-y: 100%, -10px;
+            padding: 48px 32px 24px;
+        }
+    
+    /* Header Fabien*/
+    
+        .texthead {
+            color: #fff;
+            text-align: left;
+        }
+    
+        .texthead h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    
+        .texthead h2 {
+            font-size: 28px;
+            margin-top: 15px;
+        }
+        
+    /* Top Form Fabien/Jonathan */
+    
+        .extform {
+            padding: 0 9px;
+            margin-top: 24px;
+        }
+    
+        .formulaire { 
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            border-radius: 5px;
+            color: #40484a;
+        }
+    
+        .formtitle {
+            background-color: #edeff0;
+            text-align: center;
+            padding: 20px;
+            margin: -30px -30px 30px;
+            border-radius: 5px 5px 0 0;
+        }
+    
+        form>p>span {
+            font-weight: bold;
+        }
+        
+    /* Input Form Jonathan/Fabien */
+    
+        form label span {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    
+        label{
+            display:flex;
+            flex-direction: column;
+        }
+    
+        input{  
+            background-color: #f9fafa;
+            border: 2px solid #d4d9dd;
+            border-radius: 4px;
+            padding: .75rem 1rem;
+            margin-bottom: 24px;
+        }
+    
+    /* Footer of Form Fabien/Jonathan */
+    
+        .labcheck {
+            flex-direction: row-reverse;
+            border-bottom: 1px solid #dfe0e0;
+            padding-bottom: 16px;
+        }
+    
+        .inpcheck {
+            background-color: #f9fafa;
+            border: 2px solid #d4d9dd;
+            margin: 0;
+        }
+    
+        .textcheck {
+            font-weight: normal;
+            font-size: 14px;
+            margin-left: 12px;
+            line-height: 1.3;
+            color: #4b5658;
+        }
+    
+        button {
+            background-color: #387bab;
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+            margin-top: 24px;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0 40px;
+            height: 52px;;
+        }
+    
+    /* Footer of Header Fabien */
+    
+        .footer-header {
+            margin-top: 64px;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+    
+        .div-footer-header {
+            margin: 0 1.5rem 1rem 1.5rem;
+        }
+    
+        .text-1 {
+            font-size: 36px;
+        }
+    
+        .text-2 {
+            font-size: 18px;
+        }
+    
+    /* Flexible Fabien */
+    
+        .flexible {
+            background-image: url(img/background.png);
+            padding-bottom: 80px;
+            border-bottom: 1px solid #dfe0e0;
+        }
+    
+        .girl {
+            display: none;
+        }
+    
+        .player {
+            border-radius: 4px;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .flexible>div {
+            margin-top: 1.5rem;
+        }
+    
+        .flexible>div>p {
+            font-size: 16px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    
+        .flexible>div>h4 {
+            font-weight: bold;
+            font-size: 28px;
+            color: #384047
+        }
+    
+    /* section Get a career Amaury*/
+    
+        .secjobs {
+            display: flex;
+            flex-direction:column;
+            align-items:center;
+            text-align: center;
+            padding: 3rem 0 5rem 0;
+            
+        }
+    
+        .jobspadding {
+            padding: 3rem 0 1rem 0;
+        }
+    
+        .secjobs>div h4 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #384047;
+            margin: 2rem 0 15px 0;
+        }
+    
+        .secjobs>div>p {
+            color:  #7b8b8e;
+            font-weight: 500;
+            font-size: 1rem;
+            margin: 10px 0 3rem 0;
+            line-height: 1.6;
+        }
+    
+        .secjobs>div>div>p>span {
+            color: #40484A;
+            font-weight: bold;
+        }
+    
+        .getstarded {
+            background-color: #F4F4F4;
+            padding: 8px 20px;
+            font-size: 1.125rem;
+            padding: 8px 20px;
+        }
+    
+        .mo {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .gacimages {
+            margin: 0 auto;  
+            padding: 3rem 0;       
+        }
+    
+        .gacimages>h5 {
+            display: flex;
+            align-items: center;
+            margin: 15px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #384047;
+            padding: 0 4rem;
+        }
+    
+    /* Themes Formation Amauy*/
+    
+        .abox {
+            text-decoration:none;
+        }
+    
+        .themes {
+            border-left: solid 8px #3659a2;
+            box-shadow: 0 2px #dfe0e0;
+            border-radius: 4px;
+            background-color: white;
+            padding: 20px 20px 15px 25px;
+            margin: 44px 24px 24px 24px;
+        }
+        
+        .themes h6{
+            color: #3659a2;
+            font-weight: 800;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    
+        .themes p{
+            margin-top: 5px;
+            font-size: 13px;
+        }
+        
+        .themes span{
+            font-size: 13px;
+        }
+        
+        .themes strong {
+            font-weight: bold;
+        }
+    
+        .UX {
+            border-left: solid 8px #4a4290;
+        }
+    
+        .UX h6 {
+            color: #4a4290;
+            font-weight: 800;
+            font-size: 18px;
+        }
+    
+        .php{
+            border-left: solid 8px #008297;
+        }
+        
+        .php h6 {
+            color: #008297;
+            font-weight: 800;
+            font-size: 18px;
+        }
+        .gaclearnmore{
+            background-color: #4a4290;
+            color: white;
+            border-radius: 4px;
+            padding: 15px 80px;
+            text-decoration: none;
+            margin: 60px 0;
+            font-weight:600;
+        }
+    
+        .gaclearnmore:hover{
+            background-color: #38326d;
+        }
+    
+    /*Fin Get a Career*/
+    
+    
+    /*Section Launch your career*/
+    
+        .launchcareer{        
+            border: solid 1px #d4d9dd;
+            border-radius: 4px;
+            padding: 32px;
+        }
+    
+        .launchcareer div{
+            display: flex;
+            flex-direction:column;
+            justify-items: center;
+            line-height:1.8em;
+        }
+        .launchcareer h5{
+            font-weight: 600;
+            font-size:1.2em;
+        }
+    
+        .launchcareer p{
+            margin: 10px 0 20px 0;
+        }
+    
+        
+         
+    
+        .launchlearnmore{
+            background-color: #5fcf80;
+            text-align:center;
+            color: white;
+            border-radius: 4px;
+            padding: 12px 30px;
+            text-decoration: none;
+            margin: 20px 0;
+            font-weight:600;
+        }
+    
+        .launchlearnmor:hover{
+            background-color: #34ad58;
+        }
+    
+        .techdegree{       
+          display: flex;
+          flex-direction:row;
+        }
+    
+        .techdegree h5{
+                                  
+         }
+         
+        .techdegree span{
+                  
+             
+         }
+        
+    /*Fin section Launch your career*/
+    
+    
+    /* Supportive Jonathan*/
+        
+        .comunity {
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            padding: 5rem 0 3rem 0;
+            line-height: 1.6;
+            
+        }
+    
+         .comunity h4 {
+            font-weight: bold;
+            font-size: 28px;
+            color:#384047;
+        }
+    
+        .comunity p {
+            margin: 10px 0 20px 0;   
+        }
+    
+        .comunity img {
+            max-width: 100%;
+        }
+        
+    
+    /* Partner */
+    
+        .partner {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .partner h3 {
+            font-size: 36px;
+            text-align: center;
+            color: #384047;
+            padding: 5rem 0 0;
+            margin: 15px 0 4rem;
+        }
+    
+        .partner img {
+            padding: 0 1.5rem 5rem;
+            margin: 0 auto;
+        }
+    
+    /* SECTION  Chris-Stone "Jonathan"*/
+    
+        .chris-stone{
+            
+            color: red;
+            font-size: 16 px;
+                
+                
+        }
+    
+        .chris-stone img {
+            width: 100%;
+            
+          
+        }
+        .list1{
+            color:#384047;
+            font-size: 28px;
+            font-weight: bold;
+            
+            margin: 15px 0px 32px;
+    
+        }
+            /* fin Jonathan */
+        
+    /* Footer */
+    
+        footer {
+            background-color: #F9FAFA;
+            padding: 3rem 0;
+        }
+    
+        footer div {
+            padding: 0 15px;
+        }
+    
+        .logo-copyright>p {
+            margin: 10px 0 1.5rem 0;
+            font-size: 14px;
+            color: #576366;
+        }
+    
+        .footerlogo {
+            width: 139px;
+            height: 32px;
+        }
+    
+        footer ul {
+            list-style-type: none;
+            line-height: 1.6;
+        }
+    
+        footer a {
+            color: #7b8b8e;
+            text-decoration: none;
+        }
+    
+        footer>img {
+            padding: 1.5rem 0 0 15px;
+        }
+
 }
 
 /*AFFICHAGE MOBILE*/
@@ -78,6 +589,11 @@
     .col-sm-11{width: 91.66%;}
     .col-sm-12{width: 100%;}
 
+    html {
+        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
+        color: #7b8b8e;
+    }
+
     .marginsite {
         padding-left: 32px;
         padding-right: 32px;
@@ -94,7 +610,7 @@
         text-decoration: none;
     }
 
-    .logo {
+    .navlogo {
         max-width: 139px;
         max-height: 32px;
     }
@@ -125,7 +641,6 @@
 
     .texthead {
         color: #fff;
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         text-align: left;
     }
 
@@ -148,7 +663,6 @@
     }
 
     .formulaire { 
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         background-color: white;
         display:flex;
         flex-direction: column;
@@ -208,6 +722,8 @@
         font-weight: normal;
         font-size: 14px;
         margin-left: 12px;
+        line-height: 1.3;
+        color: #4b5658;
     }
 
     button {
@@ -226,7 +742,6 @@
 
     .footer-header {
         margin-top: 64px;
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: white;
         display: flex;
         flex-wrap: wrap;
@@ -246,39 +761,80 @@
         font-size: 18px;
     }
 
+/* Flexible Fabien */
+
+    .flexible {
+        background-image: url(img/background.png);
+        padding-bottom: 80px;
+        border-bottom: 1px solid #dfe0e0;
+    }
+
+    .girl {
+        display: none;
+    }
+
+    .player {
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flexible>div {
+        margin-top: 1.5rem;
+    }
+
+    .flexible>div>p {
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    .flexible>div>h4 {
+        font-weight: bold;
+        font-size: 28px;
+        color: #384047
+    }
+
 /* section Get a career Amaury*/
 
     .secjobs {
         display: flex;
         flex-direction:column;
         align-items:center;
-    }
-    .secjobs h4 {
         text-align: center;
-        font-family: "Gotham Rounded B", Arial, Helvetica, sans-serif;
-        font-size: 28px;
-        padding: 10px;
+        padding: 3rem 0 5rem 0;
+        
     }
 
-    .secjobs>p {
+    .jobspadding {
+        padding: 3rem 0 1rem 0;
+    }
+
+    .secjobs>div h4 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #384047;
+        margin: 2rem 0 15px 0;
+    }
+
+    .secjobs>div>p {
         color:  #7b8b8e;
-        font-family: "Gotham Rounded B", sans-serif;
-        text-align: center;
         font-weight: 500;
-        font-size: 16px;
-        padding: 10px;
+        font-size: 1rem;
+        margin: 10px 0 3rem 0;
+        line-height: 1.6;
     }
 
-    .secjobs p span {
-        color: black;
-        font-family: "Gotham Rounded A", Helvetica, Arial, sans-serif;
-        font-weight: strong;
+    .secjobs>div>div>p>span {
+        color: #40484A;
+        font-weight: bold;
     }
 
     .getstarded {
         background-color: #F4F4F4;
         padding: 8px 20px;
         font-size: 1.125rem;
+        padding: 8px 20px;
     }
 
     .mo {
@@ -287,10 +843,18 @@
     }
 
     .gacimages {
+        margin: 0 auto;  
+        padding: 3rem 0;       
+    }
+
+    .gacimages>h5 {
         display: flex;
-        flex-direction: column;
-        align-items:center;
-        width: 150px;              
+        align-items: center;
+        margin: 15px 24px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #384047;
+        padding: 0 4rem;
     }
 
 /* Themes Formation Amauy*/
@@ -309,7 +873,6 @@
     }
     
     .themes h6{
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: #3659a2;
         font-weight: 800;
         font-size: 18px;
@@ -317,16 +880,11 @@
     }
 
     .themes p{
-        font-family:"Gotham Rounded B", Helvetica, Arial, sans-serif;
-        color: #7b8b8e;
-        text-align:left;
         margin-top: 5px;
         font-size: 13px;
     }
     
     .themes span{
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
-        color: #7b8b8e;
         font-size: 13px;
     }
     
@@ -339,7 +897,6 @@
     }
 
     .UX h6 {
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: #4a4290;
         font-weight: 800;
         font-size: 18px;
@@ -350,12 +907,195 @@
     }
     
     .php h6 {
-        font-family: "Gotham Rounded B", Helvetica, Arial, sans-serif;
         color: #008297;
         font-weight: 800;
         font-size: 18px;
     }
-    
+    .gaclearnmore{
+        background-color: #4a4290;
+        color: white;
+        border-radius: 4px;
+        padding: 15px 80px;
+        text-decoration: none;
+        margin: 60px 0;
+        font-weight:600;
+    }
+
+    .gaclearnmore:hover{
+        background-color: #38326d;
+    }
+
 /*Fin Get a Career*/
 
+
+/*Section Launch your career*/
+
+    .launchcareer{        
+        border: solid 1px #d4d9dd;
+        border-radius: 4px;
+        padding: 32px;
+    }
+
+    .launchcareer div{
+        display: flex;
+        flex-direction:column;
+        justify-items: center;
+        line-height:1.8em;
+    }
+    .launchcareer h5{
+        font-weight: 600;
+        font-size:1.2em;
+    }
+
+    .launchcareer p{
+        margin: 10px 0 20px 0;
+    }
+
+    
+     
+
+    .launchlearnmore{
+        background-color: #5fcf80;
+        text-align:center;
+        color: white;
+        border-radius: 4px;
+        padding: 12px 30px;
+        text-decoration: none;
+        margin: 20px 0;
+        font-weight:600;
+    }
+
+    .launchlearnmor:hover{
+        background-color: #34ad58;
+    }
+
+    .techdegree{       
+      display: flex;
+      flex-direction:row;
+    }
+
+    .techdegree h5{
+                              
+     }
+     
+    .techdegree span{
+              
+         
+     }
+    
+/*Fin section Launch your career*/
+
+
+/* Supportive Jonathan*/
+    
+    .comunity {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        padding: 5rem 0 3rem 0;
+        line-height: 1.6;
+        
+    }
+
+     .comunity h4 {
+        font-weight: bold;
+        font-size: 28px;
+        color:#384047;
+    }
+
+    .comunity p {
+        margin: 10px 0 20px 0;   
+    }
+
+    .comunity img {
+        max-width: 100%;
+    }
+    
+
+/* Partner */
+
+    .partner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partner h3 {
+        font-size: 36px;
+        text-align: center;
+        color: #384047;
+        padding: 5rem 0 0;
+        margin: 15px 0 4rem;
+    }
+
+    .partner img {
+        padding: 0 1.5rem 5rem;
+        margin: 0 auto;
+    }
+
 }
+/* SECTION  Chris-Stone "Jonathan"*/
+
+    .chris-stone{
+        
+        color: red;
+        font-size: 16 px;
+            
+            
+    }
+
+    .chris-stone img {
+        width: 100%;
+        
+      
+    }
+    .titre3{
+        color:#384047;
+        font-size: 28px;
+        font-weight: bold;
+        
+        margin: 15px 0px 32px;
+    }
+        
+    .list4{
+        color:green;
+        display: flex;
+        flex-direction:column;
+    }
+    
+        /* fin Jonathan */
+    
+/* Footer */
+
+    footer {
+        background-color: #F9FAFA;
+        padding: 3rem 0;
+    }
+
+    footer div {
+        padding: 0 15px;
+    }
+
+    .logo-copyright>p {
+        margin: 10px 0 1.5rem 0;
+        font-size: 14px;
+        color: #576366;
+    }
+
+    .footerlogo {
+        width: 139px;
+        height: 32px;
+    }
+
+    footer ul {
+        list-style-type: none;
+        line-height: 1.6;
+    }
+
+    footer a {
+        color: #7b8b8e;
+        text-decoration: none;
+    }
+
+    footer>img {
+        padding: 1.5rem 0 0 15px;
+    }
